@@ -1,0 +1,2 @@
+# logintest
+test for clearlogin
