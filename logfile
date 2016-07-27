@@ -1,0 +1,68 @@
+LOG:  database system was shut down at 2016-07-19 19:49:36 EDT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near "show" at character 13
+STATEMENT:  show tables
+	show *
+	;
+ERROR:  syntax error at or near "*" at character 6
+STATEMENT:  show *;
+ERROR:  unrecognized configuration parameter "dbs"
+STATEMENT:  show dbs;
+ERROR:  unrecognized configuration parameter "db"
+STATEMENT:  show db;
+ERROR:  unrecognized configuration parameter "users"
+STATEMENT:  show users;
+ERROR:  syntax error at or near "*" at character 6
+STATEMENT:  show * from users;
+ERROR:  syntax error at or near "quit" at character 1
+STATEMENT:  quit
+	quit()
+	exit()
+	c
+	q
+	Q
+	quit
+	show * from users;
+ERROR:  syntax error at or near "quit" at character 1
+STATEMENT:  quit;
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit;
+ERROR:  syntax error at or near "quit" at character 1
+STATEMENT:  quit();
+ERROR:  syntax error at or near "selectl" at character 1
+STATEMENT:  selectl * from rules;
+ERROR:  relation "users" does not exist at character 15
+STATEMENT:  select * from users;
+ERROR:  relation "rules" does not exist at character 15
+STATEMENT:  select * from rules;
+ERROR:  unrecognized configuration parameter "tables"
+STATEMENT:  show tables;
+ERROR:  relation "users" does not exist at character 15
+STATEMENT:  select * from users;
+ERROR:  unrecognized configuration parameter "tables"
+STATEMENT:  show tables;
+ERROR:  unrecognized configuration parameter "dbs"
+STATEMENT:  show dbs;
+ERROR:  database "project_development" already exists
+STATEMENT:  CREATE DATABASE "project_development" ENCODING = 'utf8'
+ERROR:  database "project_test" already exists
+STATEMENT:  CREATE DATABASE "project_test" ENCODING = 'utf8'
+ERROR:  unrecognized configuration parameter "tables"
+STATEMENT:  show tables;
+ERROR:  unrecognized configuration parameter "dbs"
+STATEMENT:  show dbs;
+ERROR:  relation "users" does not exist at character 15
+STATEMENT:  select * from users;
+ERROR:  relation "users" does not exist at character 15
+STATEMENT:  select * from Users;
+ERROR:  relation "rules" does not exist at character 15
+STATEMENT:  select * from rules;
+LOG:  autovacuum launcher shutting down
+LOG:  autovacuum launcher started
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down

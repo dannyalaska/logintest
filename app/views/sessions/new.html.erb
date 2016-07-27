@@ -1,0 +1,18 @@
+<%= form_for :session, url: login_path,  :html => {:class => "container"} do |f| %>
+    <h1>Log In</h1>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><h1><%= message %></h1></div>
+    <% end %>
+
+    <div class="form">
+    <%= f.label :username, "Username:"%>
+    <%= f.text_field :username%>
+    <%= f.label :password, "Password:"%>
+    <%= f.password_field :password%>
+    <%= f.submit "Log In"%>
+  </div>
+  <p>New user? <%= link_to "Sign up now!", new_user_path %></p>
+  <h1>Sign into Test Login</h1>
+  <h3>...because you are worth it</h3>
+
+<%end%>

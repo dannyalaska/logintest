@@ -1,0 +1,14 @@
+<div id="user-page">
+
+      <%=button_to 'DELETE ACCOUNT', @user, :method => :delete %>
+      <%=button_to 'LOG OUT', @session, :method => :delete %>
+      <h1>Welcome User: <%= @user.username%></h1>
+      <h2>User IP Address: <%= request.remote_ip %></h2>
+      <h2>Rules Applied</h2>
+      <%cidr = NetAddr::CIDR.create('192.168.1.1/24')%>
+      <h3>User CIDR: <%= cidr.ip%></h3>
+      <h3>First CIDR: <%= cidr.first %> </h3>
+      <h3>Last CIDR: <%= cidr.last %></h3>
+      <h3>Permission: <%= cidr.matches?(cidr.ip)%></h3>
+
+</div>
